@@ -1,0 +1,289 @@
+/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 22, ../sass/screen.scss */
+body {
+  background-color: #222222;
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em; }
+
+/* line 29, ../sass/screen.scss */
+#left, #right {
+  width: 50%;
+  float: left;
+  margin-top: 40px; }
+
+/* line 35, ../sass/screen.scss */
+#left {
+  border-right: 1px solid #cccccc;
+  text-align: right;
+  margin-left: -1px; }
+  /* line 40, ../sass/screen.scss */
+  #left ul {
+    list-style: none; }
+    /* line 43, ../sass/screen.scss */
+    #left ul li {
+      margin: 20px 20px 20px 20px;
+      padding: 5px 20px;
+      color: #cccccc;
+      font-weight: bold;
+      position: relative;
+      -webkit-transition: all 0.15s;
+      -moz-transition: all 0.15s;
+      -o-transition: all 0.15s;
+      transition: all 0.15s; }
+      /* line 51, ../sass/screen.scss */
+      #left ul li .projectTitle {
+        float: right;
+        line-height: 1.1em;
+        font-family: "adelle-sans", sans-serif;
+        font-size: 2.6em;
+        margin-bottom: 10px; }
+      /* line 60, ../sass/screen.scss */
+      #left ul li ul {
+        clear: both; }
+        /* line 63, ../sass/screen.scss */
+        #left ul li ul li {
+          display: inline;
+          font-size: 1em;
+          margin: 0;
+          padding: 0;
+          font-weight: 600; }
+      /* line 72, ../sass/screen.scss */
+      #left ul li .caption {
+        position: relative;
+        z-index: 10;
+        min-height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 0;
+        left: -60px;
+        opacity: 0;
+        font-size: .75em;
+        text-align: center;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-transition: all 0.15s;
+        -moz-transition: all 0.15s;
+        -o-transition: all 0.15s;
+        transition: all 0.15s;
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
+        /* line 87, ../sass/screen.scss */
+        #left ul li .caption p {
+          padding: 20px;
+          text-align: left;
+          font-weight: normal;
+          line-height: 1.5em; }
+      /* line 95, ../sass/screen.scss */
+      #left ul li .showCaption {
+        left: 0;
+        opacity: 1;
+        -webkit-transition: all 0.15s;
+        -moz-transition: all 0.15s;
+        -o-transition: all 0.15s;
+        transition: all 0.15s; }
+      /* line 101, ../sass/screen.scss */
+      #left ul li .pointer {
+        position: absolute;
+        right: -13px;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+        border-left: 13px solid black;
+        margin-top: 0; }
+    /* line 115, ../sass/screen.scss */
+    #left ul li:hover {
+      background-color: #333333;
+      cursor: pointer;
+      -webkit-transition: all 0.15s;
+      -moz-transition: all 0.15s;
+      -o-transition: all 0.15s;
+      transition: all 0.15s; }
+
+/* line 124, ../sass/screen.scss */
+#right {
+  position: fixed;
+  top: 0;
+  right: 0; }
+
+/* line 131, ../sass/screen.scss */
+#tags ul {
+  list-style: none;
+  margin: 20px 20px 20px 35px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px; }
+  /* line 138, ../sass/screen.scss */
+  #tags ul li {
+    position: relative;
+    float: left;
+    color: #333;
+    font-size: .8em;
+    font-weight: bold;
+    background-color: #ececec;
+    padding: 4px 15px;
+    margin: 0 5px;
+    border: 1px solid #AAA;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #999999));
+    background: -webkit-linear-gradient(top, #f9f9f9, #999999);
+    background: -moz-linear-gradient(top, #f9f9f9, #999999);
+    background: -o-linear-gradient(top, #f9f9f9, #999999);
+    background: linear-gradient(top, #f9f9f9, #999999);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+    text-shadow: rgba(255, 255, 255, 0.2) -1px -1px 0, rgba(0, 0, 0, 0.2) 1px 1px 1px;
+    -webkit-background-size: 100% 200%;
+    -moz-background-size: 100% 200%;
+    background-size: 200% 200%;
+    background-repeat: repeat; }
+    /* line 163, ../sass/screen.scss */
+    #tags ul li div {
+      position: absolute;
+      right: -21px;
+      top: 0;
+      background-color: rgba(200, 200, 200, 0.9);
+      width: 20px;
+      height: 100%;
+      text-align: center;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      color: #666;
+      -webkit-transition: all 0.15s;
+      -moz-transition: all 0.15s;
+      -o-transition: all 0.15s;
+      transition: all 0.15s;
+      -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+      /* line 176, ../sass/screen.scss */
+      #tags ul li div p {
+        margin-top: 4px; }
+    /* line 181, ../sass/screen.scss */
+    #tags ul li .tagOver {
+      right: 0;
+      -webkit-transition: all 0.15s;
+      -moz-transition: all 0.15s;
+      -o-transition: all 0.15s;
+      transition: all 0.15s; }
+  /* line 187, ../sass/screen.scss */
+  #tags ul li:hover {
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+    background-position: 0 50%; }
+  /* line 192, ../sass/screen.scss */
+  #tags ul .inactive {
+    opacity: 0.4; }
+  /* line 196, ../sass/screen.scss */
+  #tags ul .inactive:hover {
+    opacity: 1; }
+
+/* line 202, ../sass/screen.scss */
+#about {
+  color: #cccccc;
+  margin: 100px 0 0 20px;
+  clear: both; }
+  /* line 207, ../sass/screen.scss */
+  #about h2, #about p, #about .link {
+    margin: 20px;
+    display: block; }
+  /* line 212, ../sass/screen.scss */
+  #about h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.3em; }
+  /* line 218, ../sass/screen.scss */
+  #about .link, #about p {
+    margin: 10px 80px 20px 20px; }
+  /* line 222, ../sass/screen.scss */
+  #about .link {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 0 10px 10px;
+    margin: 0 80px 10px 10px;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s; }
+  /* line 230, ../sass/screen.scss */
+  #about .link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s; }
