@@ -28,16 +28,19 @@
 		    <ul>
 		    {% for post in latest_post_list %}
 		        <!--<li><a href="/posts/{{ post.url }}/">{{ post.title }}</a></li>-->
-		        <li><p class="projectTitle">{{ post.title }}</p>
-					<ul>
-						{% for tag in post.get_tags %}
-							<li>{{tag}}</li>
-						{%endfor%}
-				  	</ul>
-				  	<div id="caption1" class="caption">
-				    	<p>{{ post.caption }}</p>
-				    	<div class="pointer"></div>
-				  	</div>
+		        <li>
+		        	<a href="/posts/{{ post.url }}/">
+		        		<p class="projectTitle">{{ post.title }}</p>
+						<ul>
+							{% for tag in post.get_tags %}
+								<li class="inactive">{{tag}}</li>
+							{%endfor%}
+					  	</ul>
+					  	<div id="caption1" class="caption">
+					    	<p>{{ post.caption }}</p>
+					    	<div class="pointer"></div>
+					  	</div>
+					</a>
 				</li>
 		    {% endfor %}
 		    </ul>
@@ -69,7 +72,7 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="{{ STATIC_URL }}js/script.js"></script>
+    <script src="{{ STATIC_URL }}js/script-min.js"></script>
 
   </body>
 </html>

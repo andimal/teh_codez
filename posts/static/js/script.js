@@ -1,3 +1,6 @@
+//Extends white border when there's only a couple posts
+$('#left').css('min-height', $('#right').height() + 'px');
+
 //Show caption on hover
 $('ul li').hover(function() {
 	$(this).find('.caption').addClass('showCaption');

@@ -1,0 +1,258 @@
+@import "compass/reset";
+@import "compass/css3";
+
+$black 						 : #000;
+$blackish					 : #222;
+$blackTrans					 : rgba(0,0,0,0.9);
+$whiteish					 : #CCC;
+$baseFont					 : "adelle-sans", sans-serif;
+$hover						 : #333;
+
+$default-transition-property : all;
+$default-transition-duration : .15s;
+$default-transition-function : false;
+$default-transition-delay    : false;
+
+$default-border-radius		 : 2px;
+
+$default-box-shadow-color	 : rgba(0,0,0,0.4);
+$default-box-shadow-blur	 : 10px;
+
+
+body {
+	background-color: $blackish;
+	font-family: $baseFont;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#left, #right {
+	width: 50%;
+	float: left;
+	margin-top: 40px;
+}
+
+#left {
+	border-right: 1px solid $whiteish;
+	text-align: right;
+	margin-left: -1px;
+
+	ul {
+		list-style: none;
+
+		li {
+			margin: 20px 20px 20px 20px;
+			padding: 5px 20px;
+			color: $whiteish;
+			font-weight: bold;
+			position: relative;
+			@include transition;
+
+			.projectTitle {
+				float: right;
+				//max-width: 70%;
+				line-height: 1.1em;
+				font-family: "adelle-sans", sans-serif;
+				font-size: 2.6em;
+				margin-bottom: 10px;
+			}
+
+			ul {
+				clear: both;
+
+				li {
+					display: inline;
+					font-size: .75em;
+					position: relative;
+					margin: 0 2px 0 0;
+					padding: 2px 6px;
+					color: #333;
+					font-weight: bold;
+					background-color: #ececec;
+					border: 1px solid #AAA;
+					overflow: hidden;
+					@include border-radius(4px);
+					@include background(
+					    linear-gradient(top, #F9F9F9, #999)
+					);
+					@include box-shadow;
+					@include transition;
+					@include text-shadow(rgba(white, 0.2) -1px -1px 0, rgba(black, 0.2) 1px 1px 1px);
+
+					-webkit-background-size: 100% 200%;
+					-moz-background-size: 100% 200%;
+					background-size: 200% 200%;
+					background-repeat: repeat;
+				 }
+			}
+
+			.caption {
+				position: relative;
+				z-index: 10;
+				min-height: 100%;
+				background-color: $blackTrans;
+				position: absolute;
+				top: 0;
+				left: -60px;
+				opacity: 0;
+				font-size: .75em;
+				text-align: center;
+				@include border-radius;
+				@include transition;
+				@include box-shadow;
+
+				p {
+					padding: 20px;
+					text-align: left;
+					font-weight: normal;
+					line-height: 1.5em;
+				}
+			}
+
+			.showCaption {
+				left: 0;
+				opacity: 1;
+				@include transition;
+			}
+
+			.pointer {
+				position: absolute;
+				right: -13px;
+				top: 0;
+				width: 0; 
+				height: 0; 
+				border-top: 13px solid transparent;
+				border-bottom: 13px solid transparent;
+				border-left: 13px solid black;
+				margin-top: 0;
+			}
+
+		}
+
+		li:hover {
+			background-color: $hover;
+			cursor: pointer;
+			@include transition;
+		}
+	}
+
+}
+
+#right {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.inactive {
+	opacity: 0.4;
+}
+
+#tags {
+	ul {
+		list-style: none;
+		//border: 1px solid $whiteish;
+		margin: 20px 20px 20px 35px;
+		//padding: 15px 5px;
+		@include border-radius;
+
+		li {
+			position: relative;
+			float: left;
+			color: #333;
+			font-size: .8em;
+			font-weight: bold;
+			background-color: #ececec;
+			padding: 4px 15px;
+			margin: 0 5px;
+			border: 1px solid #AAA;
+			cursor: pointer;
+			overflow: hidden;
+			@include border-radius(4px);
+			@include background(
+			    linear-gradient(top, #F9F9F9, #999)
+			);
+			@include box-shadow;
+			@include transition;
+			@include text-shadow(rgba(white, 0.2) -1px -1px 0, rgba(black, 0.2) 1px 1px 1px);
+
+			-webkit-background-size: 100% 200%;
+			-moz-background-size: 100% 200%;
+			background-size: 200% 200%;
+			background-repeat: repeat;
+
+			div {
+				position: absolute;
+				right: -21px;
+				top: 0;
+				background-color: rgba(200,200,200,0.9);
+				width: 20px;
+				height: 100%;
+				text-align: center;
+				border-left: 1px solid rgba(255,255,255,0.1);
+				color: #666;
+				@include transition;
+				@include single-box-shadow(rgba(0,0,0,0.2), 0, 0, 10px, 0, true);
+
+				p {
+					margin-top: 4px;
+				}
+			}
+
+			.tagOver {
+				right: 0;
+				@include transition;
+			}
+		}
+
+		li:hover {
+			@include transition;
+			background-position: 0 50%;
+		}
+
+		.inactive:hover {
+			opacity: 1;
+		}
+	}
+}
+
+#about {
+	color: $whiteish;
+	margin: 100px 0 0 20px;
+	clear: both;
+
+	h2, p, .link {
+		margin: 20px;
+		display: block;
+	}
+
+	h2 {
+		margin-bottom: 0;
+		font-weight: 600;
+		font-size: 1.3em;
+	}
+
+	.link, p {
+		margin: 10px 80px 20px 20px;
+	}
+
+	.link {
+		color: inherit;
+		text-decoration: none;
+		padding: 10px 0 10px 10px;
+		margin: 0 80px 10px 10px;
+		@include transition;
+	}
+
+	.link:hover {
+		background-color: rgba(255,255,255,0.1);
+		@include transition;
+	}
+}
+
+

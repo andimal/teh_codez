@@ -95,8 +95,11 @@ INSTALLED_APPS = (
     'posts',
     'tagging',
     'admin_bootstrap',
+    'django_ckeditor',
     'django.contrib.admin',
 )
+
+DJANGO_WYSIWYG_FLAVOR = "ckeditor"
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
