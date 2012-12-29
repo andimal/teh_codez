@@ -27,4 +27,6 @@ def home(request):
 
 def detail(request, post_url):
 	p = get_object_or_404(Post, url=post_url)
-	return render_to_response('posts/detail.html', {'post': p})
+	return render_to_response('posts/detail.html', {
+		'post': p
+	}, context_instance=RequestContext(request))

@@ -1,8 +1,41 @@
-<h1>{{ post.title }}</h1>
-<ul>
-	<li>{{ post.url }}</li>
-	<li>{{ post.caption }}</li>
-	<!--<li>{{ post.tags }}</li>-->
-	<li>{{ post.pub_date }}</li>
-	<li>{{ post.content|safe }}</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>teh_codez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% block stylesheets %}
+        <link href="{{ STATIC_URL }}css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="{{ STATIC_URL }}css/monokai_sublime.css" rel="stylesheet">
+    {% endblock stylesheets %}
+
+    <script type="text/javascript" src="//use.typekit.net/jvv5myh.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <h1>{{ post.title }}</h1>
+		<ul>
+			<li>{{ post.url }}</li>
+			<li>{{ post.caption }}</li>
+			<!--<li>{{ post.tags }}</li>-->
+			<li>{{ post.pub_date }}</li>
+			<li>{{ post.content|safe }}</li>
+		</ul>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}js/script-min.js"></script>
+    <script src="{{ STATIC_URL }}js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>
