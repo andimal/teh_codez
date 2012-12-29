@@ -1,6 +1,7 @@
 from django.db import models
 from tagging.fields import TagField
 from tagging.models import Tag
+from ckeditor.fields import RichTextField
 
 class Post(models.Model):
 	title = models.CharField(max_length=50)
@@ -9,7 +10,7 @@ class Post(models.Model):
 	url = models.SlugField()
 	pub_date = models.DateTimeField('date published')
 	tags = TagField()
-	content = models.TextField()
+	content = RichTextField(config_name='content_ckeditor')
 
 	def get_tags(self):
 		return Tag.objects.get_for_object(self)

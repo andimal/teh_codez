@@ -46,8 +46,9 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    '/home/posts/static',
-    '/home/admin_bootstrap/static'
+    os.path.join(PROJECT_ROOT, '../posts/static'),
+    os.path.join(PROJECT_ROOT, '../admin_bootstrap/static'),
+    os.path.join(PROJECT_ROOT, '../ckeditor/ckeditor'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -95,11 +96,18 @@ INSTALLED_APPS = (
     'posts',
     'tagging',
     'admin_bootstrap',
-    'django_ckeditor',
+    'ckeditor',
     'django.contrib.admin',
 )
 
-DJANGO_WYSIWYG_FLAVOR = "ckeditor"
+CKEDITOR_UPLOAD_PATH = os.path.join(PROJECT_ROOT, '../posts/static/uploads')
+
+CKEDITOR_CONFIGS = {
+    'content_ckeditor': {
+        'toolbar'            : 'Basic',
+        'toolbarCanCollapse' : False,
+    },
+}
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
