@@ -54,33 +54,33 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 22, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 body {
   background-color: #222222;
   font-family: "adelle-sans", sans-serif;
   font-weight: 300;
   line-height: 1.5em; }
 
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 a {
   color: inherit;
   text-decoration: none; }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 #left, #right {
   width: 50%;
   float: left;
   margin-top: 40px; }
 
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 #left {
   border-right: 1px solid #cccccc;
   text-align: right;
   margin-left: -1px; }
-  /* line 45, ../sass/screen.scss */
+  /* line 46, ../sass/screen.scss */
   #left ul {
     list-style: none; }
-    /* line 48, ../sass/screen.scss */
+    /* line 49, ../sass/screen.scss */
     #left ul li {
       margin: 20px 20px 20px 20px;
       padding: 5px 20px;
@@ -91,17 +91,17 @@ a {
       -moz-transition: all 0.15s;
       -o-transition: all 0.15s;
       transition: all 0.15s; }
-      /* line 56, ../sass/screen.scss */
+      /* line 57, ../sass/screen.scss */
       #left ul li .projectTitle {
         float: right;
         line-height: 1.1em;
         font-family: "adelle-sans", sans-serif;
         font-size: 2.6em;
         margin-bottom: 10px; }
-      /* line 65, ../sass/screen.scss */
+      /* line 66, ../sass/screen.scss */
       #left ul li ul {
         clear: both; }
-        /* line 68, ../sass/screen.scss */
+        /* line 69, ../sass/screen.scss */
         #left ul li ul li {
           display: inline;
           font-size: .75em;
@@ -135,7 +135,7 @@ a {
           -moz-background-size: 100% 200%;
           background-size: 200% 200%;
           background-repeat: repeat; }
-      /* line 94, ../sass/screen.scss */
+      /* line 95, ../sass/screen.scss */
       #left ul li .caption {
         position: relative;
         z-index: 10;
@@ -159,13 +159,13 @@ a {
         -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
-        /* line 109, ../sass/screen.scss */
+        /* line 110, ../sass/screen.scss */
         #left ul li .caption p {
           padding: 20px;
           text-align: left;
           font-weight: normal;
           line-height: 1.5em; }
-      /* line 117, ../sass/screen.scss */
+      /* line 118, ../sass/screen.scss */
       #left ul li .showCaption {
         left: 0;
         opacity: 1;
@@ -173,7 +173,7 @@ a {
         -moz-transition: all 0.15s;
         -o-transition: all 0.15s;
         transition: all 0.15s; }
-      /* line 123, ../sass/screen.scss */
+      /* line 124, ../sass/screen.scss */
       #left ul li .pointer {
         position: absolute;
         right: -13px;
@@ -184,7 +184,7 @@ a {
         border-bottom: 13px solid transparent;
         border-left: 13px solid black;
         margin-top: 0; }
-    /* line 137, ../sass/screen.scss */
+    /* line 138, ../sass/screen.scss */
     #left ul li:hover {
       background-color: #333333;
       cursor: pointer;
@@ -193,17 +193,17 @@ a {
       -o-transition: all 0.15s;
       transition: all 0.15s; }
 
-/* line 146, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #right {
   position: fixed;
   top: 0;
   right: 0; }
 
-/* line 152, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .inactive {
   opacity: 0.4; }
 
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #tags ul {
   list-style: none;
   margin: 20px 20px 20px 35px;
@@ -212,7 +212,7 @@ a {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px; }
-  /* line 164, ../sass/screen.scss */
+  /* line 165, ../sass/screen.scss */
   #tags ul li {
     position: relative;
     float: left;
@@ -247,7 +247,7 @@ a {
     -moz-background-size: 100% 200%;
     background-size: 200% 200%;
     background-repeat: repeat; }
-    /* line 189, ../sass/screen.scss */
+    /* line 190, ../sass/screen.scss */
     #tags ul li div {
       position: absolute;
       right: -21px;
@@ -265,45 +265,45 @@ a {
       -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
       -moz-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
       box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2); }
-      /* line 202, ../sass/screen.scss */
+      /* line 203, ../sass/screen.scss */
       #tags ul li div p {
         margin-top: 4px; }
-    /* line 207, ../sass/screen.scss */
+    /* line 208, ../sass/screen.scss */
     #tags ul li .tagOver {
       right: 0;
       -webkit-transition: all 0.15s;
       -moz-transition: all 0.15s;
       -o-transition: all 0.15s;
       transition: all 0.15s; }
-  /* line 213, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   #tags ul li:hover {
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s;
     background-position: 0 50%; }
-  /* line 218, ../sass/screen.scss */
+  /* line 219, ../sass/screen.scss */
   #tags ul .inactive:hover {
     opacity: 1; }
 
-/* line 224, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 #about {
   color: #cccccc;
   margin: 100px 0 0 20px;
   clear: both; }
-  /* line 229, ../sass/screen.scss */
+  /* line 230, ../sass/screen.scss */
   #about h2, #about p, #about .link {
     margin: 20px;
     display: block; }
-  /* line 234, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   #about h2 {
     margin-bottom: 0;
     font-weight: 600;
     font-size: 1.3em; }
-  /* line 240, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   #about .link, #about p {
     margin: 10px 80px 20px 20px; }
-  /* line 244, ../sass/screen.scss */
+  /* line 245, ../sass/screen.scss */
   #about .link {
     color: inherit;
     text-decoration: none;
@@ -313,10 +313,57 @@ a {
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s; }
-  /* line 252, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   #about .link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s; }
+
+/* line 259, ../sass/screen.scss */
+nav {
+  background-color: black;
+  height: 50px; }
+  /* line 263, ../sass/screen.scss */
+  nav * {
+    float: left;
+    color: #cccccc;
+    text-align: center; }
+  /* line 269, ../sass/screen.scss */
+  nav .arrow {
+    width: 10%;
+    height: 100%;
+    border-right: 1px solid #cccccc; }
+    /* line 274, ../sass/screen.scss */
+    nav .arrow a {
+      width: 100%;
+      height: 100%;
+      line-height: 50px; }
+  /* line 281, ../sass/screen.scss */
+  nav .nextPost {
+    float: right;
+    border: 0;
+    border-left: 1px solid #cccccc; }
+  /* line 287, ../sass/screen.scss */
+  nav div {
+    width: 79%; }
+    /* line 290, ../sass/screen.scss */
+    nav div * {
+      float: none; }
+  /* line 295, ../sass/screen.scss */
+  nav .date {
+    font-size: .6em;
+    font-family: "droid-sans-mono", sans-serif; }
+
+/* line 301, ../sass/screen.scss */
+header {
+  clear: both;
+  background-color: #333;
+  height: 200px;
+  width: 100%; }
+
+/* line 308, ../sass/screen.scss */
+code {
+  font-family: "droid-sans-mono", sans-serif;
+  font-size: .9em; }

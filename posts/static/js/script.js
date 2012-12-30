@@ -39,3 +39,11 @@ $('.pointer').each(function() {
 	$(this).css('margin-top', (container.height / 2) - (pointerHeight / 2));
 });
 
+//separate tags by comma in detail view
+var tag_list = $('.detail .tags li').text();
+var tags = tag_list.split(',');
+$('.detail .tags li').remove();
+for (tag in tags) {
+	$('.detail .tags').append('<li>' + tags[tag] + '</li>');
+}
+
