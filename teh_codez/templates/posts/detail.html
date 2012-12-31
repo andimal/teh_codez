@@ -24,26 +24,37 @@
   <body class="detail">
 
   	<nav>
-  		<p class="arrow prevPost">
+  		<!--<p class="arrow prevPost">
   			<a href="#">&larr;</a>
-  		</p>
+  		</p>-->
   		<div>
   			<h1>{{ post.title }}</h1>
   			<p class="date">Posted: {{ post.pub_date }}</p>
   		</div>
-  		<p class="arrow nextPost">
+  		<!--<p class="arrow nextPost">
   			<a href="#">&rarr;</a>
-  		</p>
+  		</p>-->
   	</nav>
 
   	<header>
+  		<div>
 
+  		</div>
   	</header>
 
-	<ul class="tags">
-		<li>{{ post.tags }}</li>
-	</ul>
-	<div>{{ post.content|safe }}</div>
+  	<div class="content">
+  		<ul class="tags">
+			<li>{{ post.tags }}</li>
+		</ul>
+
+		<div>{{ post.content|safe }}</div>
+	</div>
+
+	<footer>
+		<div>
+			<a class="teh" href="#">teh_codez</a> by <a class="andy" href="http://andyyyy.com">andyyyy</a>
+		</div>
+	</footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}js/script-min.js"></script>

@@ -25,6 +25,7 @@ body {
 	font-family: $baseFont;
 	font-weight: 300;
 	line-height: 1.5em;
+	color: $whiteish;
 }
 
 a {
@@ -32,10 +33,50 @@ a {
 	text-decoration: none;
 }
 
+pre {
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-bottom: 1px solid #111;
+	border-right: 1px solid #111;
+	@include border-radius;
+	@include single-box-shadow(rgba(0,0,0,0.1));
+}
+
+.detail pre code {
+	font-family: $codeFont;
+	font-size: .9em;
+	padding: 0 2.2em 1.5em 2.2em;
+}
+
 #left, #right {
 	width: 50%;
 	float: left;
 	margin-top: 40px;
+}
+
+.small-tag {
+	display: inline;
+	font-size: .75em;
+	position: relative;
+	margin: 0 2px 0 0;
+	padding: 2px 6px;
+	color: #333;
+	font-weight: bold;
+	background-color: #ececec;
+	border: 1px solid #AAA;
+	overflow: hidden;
+	@include border-radius(4px);
+	@include background(
+	    linear-gradient(top, #F9F9F9, #999)
+	);
+	@include box-shadow;
+	@include transition;
+	@include text-shadow(rgba(white, 0.2) -1px -1px 0, rgba(black, 0.2) 1px 1px 1px);
+
+	-webkit-background-size: 100% 200%;
+	-moz-background-size: 100% 200%;
+	background-size: 200% 200%;
+	background-repeat: repeat;
 }
 
 #left {
@@ -67,28 +108,7 @@ a {
 				clear: both;
 
 				li {
-					display: inline;
-					font-size: .75em;
-					position: relative;
-					margin: 0 2px 0 0;
-					padding: 2px 6px;
-					color: #333;
-					font-weight: bold;
-					background-color: #ececec;
-					border: 1px solid #AAA;
-					overflow: hidden;
-					@include border-radius(4px);
-					@include background(
-					    linear-gradient(top, #F9F9F9, #999)
-					);
-					@include box-shadow;
-					@include transition;
-					@include text-shadow(rgba(white, 0.2) -1px -1px 0, rgba(black, 0.2) 1px 1px 1px);
-
-					-webkit-background-size: 100% 200%;
-					-moz-background-size: 100% 200%;
-					background-size: 200% 200%;
-					background-repeat: repeat;
+					@extend .small-tag;
 				 }
 			}
 
@@ -257,19 +277,23 @@ a {
 }
 
 nav {
-	background-color: $black;
+	@include background (
+			linear-gradient(top, #222, #111));
 	height: 50px;
+	border-bottom: 1px solid black;
 
 	* {
 		float: left;
 		color: $whiteish;
 		text-align: center;
+		@include text-shadow(rgba(white, 0.05) -1px -1px 0, rgba(black, 1) 1px 1px 0);
 	}
 
 	.arrow {
 		width: 10%;
 		height: 100%;
-		border-right: 1px solid $whiteish;
+		border-right: 1px solid rgba(255,255,255,0.1);
+		@include transition;
 
 		a {
 			width: 100%;
@@ -278,36 +302,111 @@ nav {
 		}
 	}
 
+	.arrow:hover {
+		background: #222;
+		@include transition;
+	}
+
 	.nextPost {
 		float: right;
 		border: 0;
-		border-left: 1px solid $whiteish;
+		border-left: 1px solid rgba(255,255,255,0.1);
+
+		a {
+			border-left: 1px solid black;
+		}
 	}
 
 	div {
-		width: 79%;
+		width: 100%;
+		border-left: 1px solid black;
+		line-height: 1.2em;
+		margin-top: 8px;
 
 		* {
 			float: none;
 		}
-	}
 
-	.date {
-		font-size: .6em;
-		font-family: $codeFont;
+		h1 {
+			margin-top: 2px;
+		}
+
+		.date {
+			font-size: .6em;
+			font-family: $codeFont;
+			color: darken($whiteish, 30%);
+		}
 	}
 }
 
-header {
+.detail {
+
+	header {
+		clear: both;
+		background-color: #333;
+		height: 200px;
+		width: 100%;
+		border-top: 1px solid rgba(255,255,255,0.05);
+		border-bottom: 1px solid #111;
+		position: relative;
+		@include single-box-shadow(rgba(0,0,0,0.1));
+
+		div {
+			height: 199px;
+			border-bottom: 1px solid rgba(255,255,255,0.05);
+		}
+	}
+
+	.content {
+		width: 80%;
+		margin: 0 auto;
+
+		.tags {
+			position: relative;
+			top: -35px;
+			text-align: center;
+
+			li {
+				@extend .small-tag;
+				margin: 0 5px;
+			}
+		}
+	}
+
+}
+
+footer {
 	clear: both;
-	background-color: #333;
-	height: 200px;
-	width: 100%;
-}
-
-code {
+	text-align: center;
+	margin-top: 80px;
+	border-top: 1px solid #111;
+	background-color: #23241F;
+	color: darken($whiteish, 40%);
+	font-size: .8em;
 	font-family: $codeFont;
-	font-size: .9em;
-}
+	@include single-box-shadow(rgba(0,0,0,0.1));
 
+	div {
+		padding: 10px 0;
+		border-top: 1px solid #333;
+	}
+
+	.teh {
+		color: #66D9EF;
+	}
+
+	.andy {
+		color: #A6E22E;
+	}
+
+	a {
+		padding: 5px 0;
+		@include transition;
+	}
+
+	a:hover {
+		background-color: #333;
+		@include transition;
+	}
+}
 
