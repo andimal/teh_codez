@@ -321,7 +321,7 @@ nav {
 		width: 100%;
 		border-left: 1px solid black;
 		line-height: 1.2em;
-		margin-top: 8px;
+		height: 50px;
 
 		* {
 			float: none;
@@ -334,9 +334,9 @@ nav {
 			margin: 0;
 		}
 
-		a {
+		.post_info {
 			position: relative;
-			top: -10px;
+			top: -11px;
 		}
 
 		h1 {
@@ -347,6 +347,19 @@ nav {
 			font-size: .6em;
 			font-family: $codeFont;
 			color: darken($whiteish, 30%);
+		}
+
+		.github {
+			border-right: solid 1px #000;
+			border-left: solid 1px #000;
+			outline: solid 1px #333;
+			margin-left: 10px;
+			@include transition;
+		}
+
+		.github:hover {
+			background-color: #333;
+			@include transition;
 		}
 	}
 }

@@ -37,7 +37,7 @@
     			<h1>{{ post.title }}</h1>
     			<p class="date">Posted: {{ post.pub_date }}</p>
         </div>
-        <a href="#">github</a>
+        <a href="https://github.com/andimal/teh_codez" class="github"><img src="{{ STATIC_URL }}img/octocat.png" alt="View this project on github" title="View this project on github" /></a>
   		</div>
   		<!--<p class="arrow nextPost">
   			<a href="#">&rarr;</a>
@@ -60,14 +60,14 @@
 
   	<footer>
   		<div>
-  			<a class="teh" href="#">teh_codez</a> by <a class="andy" href="http://andyyyy.com">andyyyy</a>
+  			<a class="teh" href="/">teh_codez</a> by <a class="andy" href="http://andyyyy.com">andyyyy</a>
   		</div>
   	</footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}js/script-min.js"></script>
     <script src="{{ STATIC_URL }}js/highlight.pack.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
   </body>
 </html>

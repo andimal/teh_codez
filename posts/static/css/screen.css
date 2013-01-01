@@ -345,7 +345,7 @@ nav {
     width: 100%;
     border-left: 1px solid black;
     line-height: 1.2em;
-    margin-top: 8px; }
+    height: 50px; }
     nav div * {
       float: none; }
     nav div .post_info, nav div a {
@@ -353,15 +353,30 @@ nav {
       display: inline-block;
       border: 0;
       margin: 0; }
-    nav div a {
+    nav div .post_info {
       position: relative;
-      top: -10px; }
+      top: -11px; }
     nav div h1 {
       margin-top: 2px; }
     nav div .date {
       font-size: .6em;
       font-family: "droid-sans-mono", sans-serif;
       color: gray; }
+    nav div .github {
+      border-right: solid 1px #000;
+      border-left: solid 1px #000;
+      outline: solid 1px #333;
+      margin-left: 10px;
+      -webkit-transition: all 0.15s;
+      -moz-transition: all 0.15s;
+      -o-transition: all 0.15s;
+      transition: all 0.15s; }
+    nav div .github:hover {
+      background-color: #333;
+      -webkit-transition: all 0.15s;
+      -moz-transition: all 0.15s;
+      -o-transition: all 0.15s;
+      transition: all 0.15s; }
 
 .detail header {
   clear: both;
