@@ -1,4 +1,3 @@
-/* line 17, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,42 +18,33 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 23, ../sass/screen.scss */
 body {
   background-color: #222222;
   font-family: "adelle-sans", sans-serif;
@@ -62,12 +52,10 @@ body {
   line-height: 1.5em;
   color: #cccccc; }
 
-/* line 31, ../sass/screen.scss */
 a {
   color: inherit;
   text-decoration: none; }
 
-/* line 36, ../sass/screen.scss */
 pre {
   border-top: 1px solid #333;
   border-left: 1px solid #333;
@@ -82,19 +70,16 @@ pre {
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
 
-/* line 45, ../sass/screen.scss */
 .detail pre code {
   font-family: "droid-sans-mono", sans-serif;
   font-size: .9em;
   padding: 0 2.2em 1.5em 2.2em; }
 
-/* line 51, ../sass/screen.scss */
 #left, #right {
   width: 50%;
   float: left;
   margin-top: 40px; }
 
-/* line 57, ../sass/screen.scss */
 .small-tag, #left ul li ul li, .detail .content .tags li {
   display: inline;
   font-size: .75em;
@@ -129,15 +114,12 @@ pre {
   background-size: 200% 200%;
   background-repeat: repeat; }
 
-/* line 82, ../sass/screen.scss */
 #left {
   border-right: 1px solid #cccccc;
   text-align: right;
   margin-left: -1px; }
-  /* line 87, ../sass/screen.scss */
   #left ul {
     list-style: none; }
-    /* line 90, ../sass/screen.scss */
     #left ul li {
       margin: 20px 20px 20px 20px;
       padding: 5px 20px;
@@ -148,17 +130,14 @@ pre {
       -moz-transition: all 0.15s;
       -o-transition: all 0.15s;
       transition: all 0.15s; }
-      /* line 98, ../sass/screen.scss */
       #left ul li .projectTitle {
         float: right;
         line-height: 1.1em;
         font-family: "adelle-sans", sans-serif;
         font-size: 2.6em;
         margin-bottom: 10px; }
-      /* line 107, ../sass/screen.scss */
       #left ul li ul {
         clear: both; }
-      /* line 115, ../sass/screen.scss */
       #left ul li .caption {
         position: relative;
         z-index: 10;
@@ -182,13 +161,11 @@ pre {
         -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
-        /* line 130, ../sass/screen.scss */
         #left ul li .caption p {
           padding: 20px;
           text-align: left;
           font-weight: normal;
           line-height: 1.5em; }
-      /* line 138, ../sass/screen.scss */
       #left ul li .showCaption {
         left: 0;
         opacity: 1;
@@ -196,7 +173,6 @@ pre {
         -moz-transition: all 0.15s;
         -o-transition: all 0.15s;
         transition: all 0.15s; }
-      /* line 144, ../sass/screen.scss */
       #left ul li .pointer {
         position: absolute;
         right: -13px;
@@ -207,7 +183,6 @@ pre {
         border-bottom: 13px solid transparent;
         border-left: 13px solid black;
         margin-top: 0; }
-    /* line 158, ../sass/screen.scss */
     #left ul li:hover {
       background-color: #333333;
       cursor: pointer;
@@ -216,17 +191,14 @@ pre {
       -o-transition: all 0.15s;
       transition: all 0.15s; }
 
-/* line 167, ../sass/screen.scss */
 #right {
   position: fixed;
   top: 0;
   right: 0; }
 
-/* line 173, ../sass/screen.scss */
 .inactive {
   opacity: 0.4; }
 
-/* line 178, ../sass/screen.scss */
 #tags ul {
   list-style: none;
   margin: 20px 20px 20px 35px;
@@ -235,7 +207,6 @@ pre {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px; }
-  /* line 185, ../sass/screen.scss */
   #tags ul li {
     position: relative;
     float: left;
@@ -270,7 +241,6 @@ pre {
     -moz-background-size: 100% 200%;
     background-size: 200% 200%;
     background-repeat: repeat; }
-    /* line 210, ../sass/screen.scss */
     #tags ul li div {
       position: absolute;
       right: -21px;
@@ -288,45 +258,36 @@ pre {
       -webkit-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
       -moz-box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2);
       box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2); }
-      /* line 223, ../sass/screen.scss */
       #tags ul li div p {
         margin-top: 4px; }
-    /* line 228, ../sass/screen.scss */
     #tags ul li .tagOver {
       right: 0;
       -webkit-transition: all 0.15s;
       -moz-transition: all 0.15s;
       -o-transition: all 0.15s;
       transition: all 0.15s; }
-  /* line 234, ../sass/screen.scss */
   #tags ul li:hover {
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s;
     background-position: 0 50%; }
-  /* line 239, ../sass/screen.scss */
   #tags ul .inactive:hover {
     opacity: 1; }
 
-/* line 245, ../sass/screen.scss */
 #about {
   color: #cccccc;
   margin: 100px 0 0 20px;
   clear: both; }
-  /* line 250, ../sass/screen.scss */
   #about h2, #about p, #about .link {
     margin: 20px;
     display: block; }
-  /* line 255, ../sass/screen.scss */
   #about h2 {
     margin-bottom: 0;
     font-weight: 600;
     font-size: 1.3em; }
-  /* line 261, ../sass/screen.scss */
   #about .link, #about p {
     margin: 10px 80px 20px 20px; }
-  /* line 265, ../sass/screen.scss */
   #about .link {
     color: inherit;
     text-decoration: none;
@@ -336,7 +297,6 @@ pre {
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s; }
-  /* line 273, ../sass/screen.scss */
   #about .link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     -webkit-transition: all 0.15s;
@@ -344,7 +304,6 @@ pre {
     -o-transition: all 0.15s;
     transition: all 0.15s; }
 
-/* line 279, ../sass/screen.scss */
 nav {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222222), color-stop(100%, #111111));
   background: -webkit-linear-gradient(top, #222222, #111111);
@@ -353,13 +312,11 @@ nav {
   background: linear-gradient(top, #222222, #111111);
   height: 50px;
   border-bottom: 1px solid black; }
-  /* line 285, ../sass/screen.scss */
   nav * {
     float: left;
     color: #cccccc;
     text-align: center;
     text-shadow: rgba(255, 255, 255, 0.05) -1px -1px 0, black 1px 1px 0; }
-  /* line 292, ../sass/screen.scss */
   nav .arrow {
     width: 10%;
     height: 100%;
@@ -368,74 +325,68 @@ nav {
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s; }
-    /* line 298, ../sass/screen.scss */
     nav .arrow a {
       width: 100%;
       height: 100%;
       line-height: 50px; }
-  /* line 305, ../sass/screen.scss */
   nav .arrow:hover {
     background: #222;
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s; }
-  /* line 310, ../sass/screen.scss */
   nav .nextPost {
     float: right;
     border: 0;
     border-left: 1px solid rgba(255, 255, 255, 0.1); }
-    /* line 315, ../sass/screen.scss */
     nav .nextPost a {
       border-left: 1px solid black; }
-  /* line 320, ../sass/screen.scss */
   nav div {
     width: 100%;
     border-left: 1px solid black;
     line-height: 1.2em;
     margin-top: 8px; }
-    /* line 326, ../sass/screen.scss */
     nav div * {
       float: none; }
-    /* line 330, ../sass/screen.scss */
+    nav div .post_info, nav div a {
+      width: auto;
+      display: inline-block;
+      border: 0;
+      margin: 0; }
+    nav div a {
+      position: relative;
+      top: -10px; }
     nav div h1 {
       margin-top: 2px; }
-    /* line 334, ../sass/screen.scss */
     nav div .date {
       font-size: .6em;
       font-family: "droid-sans-mono", sans-serif;
       color: gray; }
 
-/* line 344, ../sass/screen.scss */
 .detail header {
   clear: both;
-  background-color: #333;
   height: 200px;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid #111;
   position: relative;
+  background-position-x: -40%;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-  /* line 354, ../sass/screen.scss */
   .detail header div {
     height: 199px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
-/* line 360, ../sass/screen.scss */
 .detail .content {
   width: 80%;
   margin: 0 auto; }
-  /* line 364, ../sass/screen.scss */
   .detail .content .tags {
     position: relative;
     top: -35px;
     text-align: center; }
-    /* line 369, ../sass/screen.scss */
     .detail .content .tags li {
       margin: 0 5px; }
 
-/* line 378, ../sass/screen.scss */
 footer {
   clear: both;
   text-align: center;
@@ -448,24 +399,19 @@ footer {
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-  /* line 389, ../sass/screen.scss */
   footer div {
     padding: 10px 0;
     border-top: 1px solid #333; }
-  /* line 394, ../sass/screen.scss */
   footer .teh {
     color: #66D9EF; }
-  /* line 398, ../sass/screen.scss */
   footer .andy {
     color: #A6E22E; }
-  /* line 402, ../sass/screen.scss */
   footer a {
     padding: 5px 0;
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s; }
-  /* line 407, ../sass/screen.scss */
   footer a:hover {
     background-color: #333;
     -webkit-transition: all 0.15s;

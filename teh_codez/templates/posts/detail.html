@@ -13,7 +13,12 @@
     {% endblock stylesheets %}
 
     <script type="text/javascript" src="//use.typekit.net/jvv5myh.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/ybk4fpt.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <style>
+      {{ post.header_css }}
+    </style>
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,33 +33,36 @@
   			<a href="#">&larr;</a>
   		</p>-->
   		<div>
-  			<h1>{{ post.title }}</h1>
-  			<p class="date">Posted: {{ post.pub_date }}</p>
+        <div class="post_info">
+    			<h1>{{ post.title }}</h1>
+    			<p class="date">Posted: {{ post.pub_date }}</p>
+        </div>
+        <a href="#">github</a>
   		</div>
   		<!--<p class="arrow nextPost">
   			<a href="#">&rarr;</a>
   		</p>-->
   	</nav>
 
-  	<header>
-  		<div>
-
+  	<header style="background-image: url({{ STATIC_URL }}img/{{ post.url }}.jpg);">
+      <div>
+        {{ post.header|safe }}
   		</div>
   	</header>
 
   	<div class="content">
   		<ul class="tags">
-			<li>{{ post.tags }}</li>
-		</ul>
+  			<li>{{ post.tags }}</li>
+  		</ul>
 
-		<div>{{ post.content|safe }}</div>
-	</div>
+  		<div>{{ post.content|safe }}</div>
+  	</div>
 
-	<footer>
-		<div>
-			<a class="teh" href="#">teh_codez</a> by <a class="andy" href="http://andyyyy.com">andyyyy</a>
-		</div>
-	</footer>
+  	<footer>
+  		<div>
+  			<a class="teh" href="#">teh_codez</a> by <a class="andy" href="http://andyyyy.com">andyyyy</a>
+  		</div>
+  	</footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="{{ STATIC_URL }}js/script-min.js"></script>
