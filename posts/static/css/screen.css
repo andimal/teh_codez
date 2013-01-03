@@ -61,6 +61,7 @@ pre {
   border-left: 1px solid #333;
   border-bottom: 1px solid #111;
   border-right: 1px solid #111;
+  margin-top: 20px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -72,8 +73,7 @@ pre {
 
 .detail pre code {
   font-family: "droid-sans-mono", sans-serif;
-  font-size: .9em;
-  padding: 0 2.2em 1.5em 2.2em; }
+  font-size: .9em; }
 
 #left, #right {
   width: 50%;
@@ -215,7 +215,7 @@ pre {
     font-weight: bold;
     background-color: #ececec;
     padding: 4px 15px;
-    margin: 0 5px;
+    margin: 0 5px 8px 5px;
     border: 1px solid #AAA;
     cursor: pointer;
     overflow: hidden;
@@ -318,9 +318,10 @@ nav {
     text-align: center;
     text-shadow: rgba(255, 255, 255, 0.05) -1px -1px 0, black 1px 1px 0; }
   nav .arrow {
+    position: absolute;
     width: 10%;
-    height: 100%;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    height: 50px;
+    border-right: 1px solid #2A2A2A;
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
@@ -365,14 +366,14 @@ nav {
     nav div .github {
       border-right: solid 1px #000;
       border-left: solid 1px #000;
-      outline: solid 1px #333;
+      outline: solid 1px #2A2A2A;
       margin-left: 10px;
       -webkit-transition: all 0.15s;
       -moz-transition: all 0.15s;
       -o-transition: all 0.15s;
       transition: all 0.15s; }
     nav div .github:hover {
-      background-color: #333;
+      background-color: #222;
       -webkit-transition: all 0.15s;
       -moz-transition: all 0.15s;
       -o-transition: all 0.15s;
@@ -394,6 +395,7 @@ nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
 .detail .content {
   width: 80%;
+  max-width: 700px;
   margin: 0 auto; }
   .detail .content .tags {
     position: relative;
@@ -401,6 +403,45 @@ nav {
     text-align: center; }
     .detail .content .tags li {
       margin: 0 5px; }
+  .detail .content .post-content {
+    word-wrap: break-word; }
+    .detail .content .post-content a {
+      text-decoration: underline;
+      -webkit-transition: all 0.15s;
+      -moz-transition: all 0.15s;
+      -o-transition: all 0.15s;
+      transition: all 0.15s; }
+    .detail .content .post-content a:hover {
+      background-color: #333;
+      -webkit-transition: all 0.15s;
+      -moz-transition: all 0.15s;
+      -o-transition: all 0.15s;
+      transition: all 0.15s; }
+    .detail .content .post-content pre {
+      white-space: pre-wrap; }
+    .detail .content .post-content blockquote {
+      margin: 10px 60px;
+      font-style: italic; }
+    .detail .content .post-content h2 {
+      margin: 40px 0 0 0;
+      font-size: 1.3em;
+      border-bottom: 4px solid #333;
+      padding-bottom: 10px; }
+    .detail .content .post-content p {
+      margin: 20px 0; }
+    .detail .content .post-content ol {
+      margin: 0 0 10px 60px;
+      list-style: decimal; }
+      .detail .content .post-content ol li {
+        margin: 5px 0; }
+    .detail .content .post-content ul {
+      list-style: disc;
+      margin: 0 0 10px 60px; }
+      .detail .content .post-content ul li {
+        margin: 5px 0; }
+        .detail .content .post-content ul li ul {
+          margin: 0 0 0 20px;
+          list-style: circle; }
 
 footer {
   clear: both;
@@ -433,3 +474,21 @@ footer {
     -moz-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s; }
+
+@media all and (max-width: 699px) {
+  #left, #right {
+    width: 100%;
+    float: none;
+    min-height: auto;
+    position: relative;
+    border: none; }
+    #left #about, #right #about {
+      position: relative;
+      top: 20px;
+      margin-bottom: 40px; }
+      #left #about p, #left #about a, #right #about p, #right #about a {
+        margin: 0 20px;
+        padding: 5px; }
+
+  #left {
+    border-bottom: 1px solid #CCC; } }
